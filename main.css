@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Redressed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit';
+}
+
+body {
+  background-image: url("background.png");
+  overflow: none;
+  background-repeat: none;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.23);
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  border: 5px;
+  gap: 30%;
+}
+
+.container .box .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4%;
+}
+
+.container .box .input .location {
+  padding: 3%;
+  background-image: url("location.png");
+  position: left;
+  background-size: 14%;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-color: #435056;
+  border-radius: 10px;
+  border: 3px solid #435056;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+.container .box .input .location:focus {
+  background-color: white;
+  outline: none;
+  color: #435056;
+}
+
+.container .box .input .button {
+  border: 3px solid #435056;
+  background-color: #435056;
+  border-radius: 10px;
+  padding: 1% 2%;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .box .input .button:hover {
+  color: #435056;
+  background-color: white;
+  cursor: pointer;
+}
+
+.container .box .display {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 630px) {
+  body .container .box {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
